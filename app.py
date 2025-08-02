@@ -42,7 +42,10 @@ def delete(id):
     except:
         return 'there was a problem deleting the task'
     
-    
+
+@app.route('/update/<int:id>', methods=['GET', 'POST'])  
+def update(id):
+    return ''
 
 if __name__ == '__main__':
     app.run(debug=True)
